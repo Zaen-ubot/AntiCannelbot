@@ -103,15 +103,15 @@ async def main_handler(bot, message):
 @Zaen.on_message(filters.command(["start"]) & filters.private)
 async def start_handler(bot, message):
     await message.reply_text(
-        text="""Hallo! First For Using me add me to the chat, and I will Automatic block the Users channels that write to the chat,
+        text="""Heya I'm A Anti Channel Tegram bot to delete and ban message sent by channel,
 
 check /help for more.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Update", url=f"https://t.me/ProjectsSkyzu"),
+                    InlineKeyboardButton("Update", url=f"https://t.me/GabutSupport"),
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/skyzusupport"
+                        "Support", url=f"https://t.me/GabutSupport"
                     ),
                 ]
             ]
@@ -123,13 +123,13 @@ check /help for more.""",
 @Zaen.on_message(filters.command(["help"]) & filters.private)
 async def help_handler(bot, message):
     await message.reply_text(
-        text="""/ban [channel_id] : ban channel from sending message as channel.
-/unban [channel_id] : unban channel from sending message as channel.
-/add_whitelist [channel_id] : add channel into whitelist and protect channel for automatic actions.
-/del_whitelist [channel_id] : remove channel from whitelist.
-/show_whitelist : Show all white list channels.
+        text="""/ban [channel_id] :ʙᴀɴ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇ ᴀs ᴄʜᴀɴɴᴇʟ..
+/unban [channel_id] : ᴜɴʙᴀɴ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ sᴇɴᴅɪɴɢ ᴍᴇssᴀɢᴇ ᴀs ᴄʜᴀɴɴᴇʟ..
+/add_whitelist [channel_id] :ᴀᴅᴅ ᴄʜᴀɴɴᴇʟ ɪɴᴛᴏ ᴡʜɪᴛᴇʟɪsᴛ ᴀɴᴅ ᴘʀᴏᴛᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ꜰᴏʀ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ᴀᴄᴛɪᴏɴs.
+/del_whitelist [channel_id] :ʀᴇᴍᴏᴠᴇ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ᴡʜɪᴛᴇʟɪsᴛ..
+/show_whitelist :sʜᴏᴡ ᴀʟʟ ᴡʜɪᴛᴇ ʟɪsᴛ ᴄʜᴀɴɴᴇʟs.
 
-for more help Go @idzeroidsupport and ask""",
+ꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ɢᴏ @idzeroidsupport ᴀɴᴅ ᴀsᴋ""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
