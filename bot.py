@@ -109,12 +109,10 @@ check /help for more.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Update", url=f"https://t.me/GabutSupport"),
+                    InlineKeyboardButton("📱Support📱", url=f"https://t.me/GabutSupport"),
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/GabutSupport"
-                    InlineKeyboardButton(
-                        "Developer", url=f"https://t.me/Mafia_Tobatz"
-                    [
+                        "Managed", url=f"https://t.me/Mafia_Tobatz"
+                    ),
                 ]
             ]
         ),
@@ -131,16 +129,15 @@ async def help_handler(bot, message):
 /del_whitelist [channel_id] :ʀᴇᴍᴏᴠᴇ ᴄʜᴀɴɴᴇʟ ꜰʀᴏᴍ ᴡʜɪᴛᴇʟɪsᴛ..
 /show_whitelist :sʜᴏᴡ ᴀʟʟ ᴡʜɪᴛᴇ ʟɪsᴛ ᴄʜᴀɴɴᴇʟs.
 
-ꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ɢᴏ @idzeroidsupport ᴀɴᴅ ᴀsᴋ""",
+✗ 𝘗ᴏᴡᴇʀᴇᴅ 💕 𝘉ʏ: 𝘛ᴇᴀᴍ 𝘡𝘢𝘦𝘯! 
+@Mafia_Tobatz""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Update", url=f"https://t.me/GabutSupport"),
+                    InlineKeyboardButton("📱Support📱", url=f"https://t.me/GabutSupport"),
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/GabutSupport"
-                    InlineKeyboardButton(
-                        "Developer", url=f"https://t.me/Mafia_Tobatz"
-                    [
+                        "Managed", url=f"https://t.me/GabutSupport"
+                    ),
                 ]
             ]
         ),
