@@ -1,5 +1,4 @@
 # AntiCannelbot
-# Anti Channel
 A Bot Telegram Anti Users Channel to automatic ban users who using channel to send message in group.
 
 ### Features:
