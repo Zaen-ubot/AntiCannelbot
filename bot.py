@@ -103,7 +103,7 @@ async def main_handler(bot, message):
 @Zaen.on_message(filters.command(["start"]) & filters.private)
 async def start_handler(bot, message):
     await message.reply_text(
-        text="""Heya I'm A Anti Channel Tegram bot to delete and ban message sent by channel,
+        text="""Heya I'm {} Anti Channel Tegram bot to delete and ban message sent by channel,
 
 check /help for more.""",
         reply_markup=InlineKeyboardMarkup(
@@ -111,7 +111,7 @@ check /help for more.""",
                 [
                     InlineKeyboardButton("📱Support📱", url=f"https://t.me/GabutSupport"),
                     InlineKeyboardButton(
-                        "Managed", url=f"https://t.me/Mafia_Tobatz"
+                        "👨‍💻Developer👨‍💻", url=f"https://t.me/Mafia_Tobatz"
                     ),
                 ]
             ]
@@ -136,7 +136,7 @@ async def help_handler(bot, message):
                 [
                     InlineKeyboardButton("📱Support📱", url=f"https://t.me/GabutSupport"),
                     InlineKeyboardButton(
-                        "Managed", url=f"https://t.me/GabutSupport"
+                        "👨‍💻Developer 👨‍💻", url=f"https://t.me/GabutSupport"
                     ),
                 ]
             ]
