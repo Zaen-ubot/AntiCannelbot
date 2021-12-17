@@ -114,7 +114,7 @@ check /help for more.""",
                         "Support", url=f"https://t.me/GabutSupport"
                     InlineKeyboardButton(
                         "Developer", url=f"https://t.me/Mafia_Tobatz"
-                    ),
+                    [
                 ]
             ]
         ),
@@ -140,7 +140,7 @@ async def help_handler(bot, message):
                         "Support", url=f"https://t.me/GabutSupport"
                     InlineKeyboardButton(
                         "Developer", url=f"https://t.me/Mafia_Tobatz"
-                    ),
+                    [
                 ]
             ]
         ),
