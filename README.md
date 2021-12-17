@@ -22,7 +22,7 @@ python3 bot.py
 ```
 
 ### Credits
-- [BraydayXD](https://github.com/BrayDanXD)
+- [BraydanXD](https://github.com/BrayDanXD)
 - [Zaen](https://github.com/Zaen-ubot)
 
 
