@@ -25,7 +25,7 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
-Aryza = Client(
+Zaen = Client(
     "AntiUsersChannel",
     api_id=Config.API_ID,
     api_hash=Config.API_HASH,
@@ -69,7 +69,7 @@ custom_chat_filter = filters.create(
 )
 
 
-@Zaen-ubot.on_message(custom_message_filter & filters.group & custom_chat_filter)
+@Zaen.on_message(custom_message_filter & filters.group & custom_chat_filter)
 async def main_handler(bot, message):
     chat_id = message.chat.id
     a_id = message.sender_chat.id
@@ -100,7 +100,7 @@ async def main_handler(bot, message):
     await message.delete()
 
 
-@Zaen-ubot.on_message(filters.command(["start"]) & filters.private)
+@Zaen.on_message(filters.command(["start"]) & filters.private)
 async def start_handler(bot, message):
     await message.reply_text(
         text="""Hallo! First For Using me add me to the chat, and I will Automatic block the Users channels that write to the chat,
@@ -120,7 +120,7 @@ check /help for more.""",
     )
 
 
-@Zaen-ubot.on_message(filters.command(["help"]) & filters.private)
+@Zaen.on_message(filters.command(["help"]) & filters.private)
 async def help_handler(bot, message):
     await message.reply_text(
         text="""/ban [channel_id] : ban channel from sending message as channel.
@@ -144,7 +144,7 @@ for more help Go @idzeroidsupport and ask""",
     )
 
 
-@Zaen-ubot.on_callback_query()
+@Zaen.on_callback_query()
 async def cb_handler(bot, query):
     cb_data = query.data
     if cb_data.startswith("unban_"):
@@ -166,7 +166,7 @@ async def cb_handler(bot, query):
             await query.message.edit_reply_markup(reply_markup=None)
 
 
-@Zaen-ubot.on_message(filters.command(["ban"]) & filters.group)
+@Zaen.on_message(filters.command(["ban"]) & filters.group)
 async def cban_handler(bot, message):
     chat_id = message.chat.id
     user = await bot.get_chat_member(message.chat.id, message.from_user.id)
@@ -205,7 +205,7 @@ async def cban_handler(bot, message):
         print(e)
 
 
-@Zaen-ubot.on_message(filters.command(["unban"]) & filters.group)
+@Zaen.on_message(filters.command(["unban"]) & filters.group)
 async def uncban_handler(bot, message):
     chat_id = message.chat.id
     user = await bot.get_chat_member(message.chat.id, message.from_user.id)
@@ -234,7 +234,7 @@ async def uncban_handler(bot, message):
         await message.reply_text(e)
 
 
-@Zaen-ubot.on_message(filters.command(["add_whitelist"]) & filters.group)
+@Zaen.on_message(filters.command(["add_whitelist"]) & filters.group)
 async def add_whitelist_handler(bot, message):
     chat_id = message.chat.id
     user = await bot.get_chat_member(chat_id, message.from_user.id)
@@ -257,7 +257,7 @@ async def add_whitelist_handler(bot, message):
         print(e)
 
 
-@Zaen-ubot.on_message(filters.command(["del_whitelist"]) & filters.group)
+@Zaen.on_message(filters.command(["del_whitelist"]) & filters.group)
 async def del_whitelist_handler(bot, message):
     chat_id = message.chat.id
     user = await bot.get_chat_member(chat_id, message.from_user.id)
@@ -280,7 +280,7 @@ async def del_whitelist_handler(bot, message):
         print(e)
 
 
-@Zaen-ubot.on_message(filters.command(["show_whitelist"]) & filters.group)
+@Zaen.on_message(filters.command(["show_whitelist"]) & filters.group)
 async def del_whitelist_handler(bot, message):
     chat_id = message.chat.id
     user = await bot.get_chat_member(chat_id, message.from_user.id)
@@ -296,4 +296,4 @@ async def del_whitelist_handler(bot, message):
 
 
 if __name__ == "__main__":
-    Zaen-ubot.run()
+    Zaen.run()
