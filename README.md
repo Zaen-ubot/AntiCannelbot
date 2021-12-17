@@ -1,0 +1,2 @@
+# AntiCannelbot
+Anti
