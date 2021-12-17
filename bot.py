@@ -103,7 +103,7 @@ async def main_handler(bot, message):
 @Zaen.on_message(filters.command(["start"]) & filters.private)
 async def start_handler(bot, message):
     await message.reply_text(
-        text="""<b>👋 Hallo {m.from_user.mention}!I'm  Anti Channel Tegram bot to delete and ban message sent by channel,
+        text="""<b>Hi {message.from_user.first_name} 😉️!</b> !I'm  Anti Channel Tegram bot to delete and ban message sent by channel,
 
 check /help for more.""",
         reply_markup=InlineKeyboardMarkup(
