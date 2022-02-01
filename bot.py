@@ -109,9 +109,9 @@ check /help for more.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📱Support📱", url=f"https://t.me/GabutSupport"),
+                    InlineKeyboardButton("📱Support📱", url=f"https://t.me/SharingUserbot"),
                     InlineKeyboardButton(
-                        "👨‍💻Developer👨‍💻", url=f"https://t.me/Mafia_Tobatz"
+                        "👨‍💻Developer👨‍💻", url=f"https://t.me/TeleUdahRusak"
                     ),
                 ]
             ]
@@ -134,9 +134,9 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📱Support📱", url=f"https://t.me/GabutSupport"),
+                    InlineKeyboardButton("📱Support📱", url=f"https://t.me/SharingUserbot"),
                     InlineKeyboardButton(
-                        "👨‍💻Developer 👨‍💻", url=f"https://t.me/GabutSupport"
+                        "👨‍💻Developer 👨‍💻", url=f"https://t.me/TeleUdahRusak"
                     ),
                 ]
             ]
