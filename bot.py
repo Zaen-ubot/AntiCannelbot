@@ -111,7 +111,7 @@ check /help for more.""",
                 [
                     InlineKeyboardButton("📱Support📱", url=f"https://t.me/SharingUserbot"),
                     InlineKeyboardButton(
-                        "👨‍💻Developer👨‍💻", url=f"https://t.me/TeleUdahRusak"
+                        "👨‍💻Developer👨‍💻", url=f"https://t.me/Mafia_TobaTZ"
                     ),
                 ]
             ]
@@ -136,7 +136,7 @@ async def help_handler(bot, message):
                 [
                     InlineKeyboardButton("📱Support📱", url=f"https://t.me/SharingUserbot"),
                     InlineKeyboardButton(
-                        "👨‍💻Developer 👨‍💻", url=f"https://t.me/TeleUdahRusak"
+                        "👨‍💻Developer 👨‍💻", url=f"https://t.me/Mafia_TobaTZ"
                     ),
                 ]
             ]
